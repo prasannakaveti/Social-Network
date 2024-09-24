@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Network</title>
+    <link rel="stylesheet" href="C2.css">
+</head>
+<body>
+    <header>
+        <h1>Social Network</h1>
+        <nav>
+            <a href="#profile">Profile</a>
+            <a href="#feed">Feed</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="profile">
+            <h2>User Profile</h2>
+            <div class="profile-info">
+                <img src="default-avatar.png" alt="Profile Picture" class="avatar">
+                <h3 id="username">Username</h3>
+                <button id="edit-profile">Edit Profile</button>
+            </div>
+            <div class="privacy-settings">
+                <h3>Privacy Settings</h3>
+                <label>
+                    <input type="checkbox" id="private-profile"> Private Profile
+                </label>
+            </div>
+        </section>
+
+        <section id="feed">
+            <h2>Feed</h2>
+            <div class="post-form">
+                <textarea id="post-content" placeholder="What's on your mind?"></textarea>
+                <button id="post-btn">Post</button>
+            </div>
+            <div id="posts-container">
+                <!-- Posts will be dynamically inserted here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Social Network</p>
+    </footer>
+
+    <script src="C2.js"></script>
+</body>
+</html>
